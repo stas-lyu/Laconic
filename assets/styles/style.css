@@ -1,0 +1,309 @@
+:root {
+    --main-color: #2F80ED;
+    --white-color: #fff;
+}
+
+.header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0.6, 0, 0, 0.4), rgba(255, 255, 255, 0.8)), url('../images/bg.png');
+}
+
+.header-top {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 150px;
+}
+
+.navbar {
+    text-transform: uppercase;
+    list-style-type: none;
+    font-family: Lato, serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    padding: 0 20px;
+    font-family: Lato, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #2F80ED;
+}
+
+.visit {
+    text-transform: uppercase;
+    height: 32px;
+    background: none;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.header-middle {
+    width: 430px;
+    margin-left: auto;
+    margin-top: 90px;
+    margin-right: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-middle button {
+    margin-top: 65px;
+    margin-left: auto;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #2F80ED;
+    color: var(--white-color);
+    width: 210px;
+    height: 32px;
+}
+
+.header-middle h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.header-middle h2:before {
+    content: 'ПОВНИЙ КОМПЛЕКС МЕДИЧНИХ ПОСЛУГ';
+    color: var(--main-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.contact {
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+.description h4 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.description p {
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 34px;
+    margin-bottom: 8px;
+}
+
+.description button {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 220px;
+    height: 44px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow:before {
+    content: '';
+    position: absolute;
+    bottom: -41px;
+
+    width: 20px;
+    border: 20px solid transparent;
+    border-top: 20px solid green;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav li {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.phone {
+    border-left: 1px solid var(--white-color);
+    border-right: 1px solid var(--white-color);
+    list-style: none;
+
+}
+
+.star {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.star::before,
+.star::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid var(--main-color);
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}
+
+.title:before {
+    margin-top: 45px;
+    content: 'Комплексний підхід до Вашого здоровя';
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+}
+
+.tabs {
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs__caption {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    position: relative;
+    margin: -1px 0 100px -1px;
+}
+
+.tabs__caption li:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: -2px;
+    z-index: -1;
+    height: 5px;
+}
+
+.tabs__caption:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.tabs__caption li {
+    padding: 9px 15px;
+    margin: 1px 0 0 1px;
+
+    color: #000000;
+    width: 300px;
+    position: relative;
+
+    border-width: 2px 2px 0;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.tabs__caption p {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.tabs__content div {
+    text-align: left;
+    padding: 0 215px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.tabs__content h4 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 134px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.tabs__caption li:not(.active) {
+    cursor: pointer;
+}
+
+.tabs__caption li:not(.active):hover {
+
+}
+
+.tabs__caption .active {
+    background: #FFF;
+    color: #000;
+}
+
+.tabs__caption .active:after {
+    content: '';
+    position: absolute;
+    bottom: -174px;
+    width: 20px;
+    border: 30px solid transparent;
+    border-top: 50px solid var(--white-color);
+    left: 130px;
+    height: 5px;
+}
+
+.tabs__content {
+    padding: 0 120px;
+    background: #F6F6F6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    display: none;
+    border-radius: 0 5px 5px 5px;
+}
+
+.tabs--content_button {
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 35px;
+    height: 45px;
+    color: var(--main-color);
+}
+
+.tabs__content.active {
+    display: flex;
+}
+
+
+
